@@ -452,12 +452,35 @@ img {
   gap: 20px;
 }
 
+.made-img-container {
+  position: relative;
+}
+
+.made-play-btn {
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  border-radius: 50%;
+}
+
 .made-title-list-container {
   padding: 32px;
   width: 516px;
   background-color: #fff;
   border-radius: 15px;
 }
+
+.made-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .made-img {
 }
 
@@ -470,17 +493,32 @@ img {
   margin-bottom: 28px;
   width: 350px;
 }
+
 .made-list {
   background-color: #ffffff;
 }
+
 .made-list-item {
   margin-bottom: 24px;
   padding-left: 16px;
+  position: relative;
 }
 
 .made-list-item:last-child {
   margin-bottom: 0;
 }
+
+.made-list-item::before {
+  content: "";
+  position: absolute;
+  background-image: url(../images/Ellipse1.svg);
+  background-repeat: no-repeat;
+  width: 8px;
+  height: 8px;
+  top: 5px;
+  left: 0;
+}
+
 .made-list-item-text {
   color: #111;
   font-size: 14px;
