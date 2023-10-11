@@ -597,25 +597,104 @@
             </address>
           </div>
         </div>
-
-        <nav class="footer-nav">
-          <ul class="footer-nav-list">
-            <li class="footer-nav-list-item">
-              <a class="footer-nav-list-item-link" href="#">Home</a>
-            </li>
-            <li class="footer-nav-list-item">
-              <a class="footer-nav-list-item-link" href="#made"
-                >How it’s made?</a
-              >
-            </li>
-            <li class="footer-nav-list-item">
-              <a class="footer-nav-list-item-link" href="#loved"
-                >Chocolate is loved</a
-              >
-            </li>
-          </ul>
-        </nav>
+        <div class="footer-second-part">
+          <nav class="footer-nav">
+            <ul class="footer-nav-list">
+              <li class="footer-nav-list-item">
+                <a class="footer-nav-list-item-link" href="#">Home</a>
+              </li>
+              <li class="footer-nav-list-item">
+                <a class="footer-nav-list-item-link" href="#made"
+                  >How it’s made?</a
+                >
+              </li>
+              <li class="footer-nav-list-item">
+                <a class="footer-nav-list-item-link" href="#loved"
+                  >Chocolate is loved</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <form class="footer-form">
+            <label class="footer-form-label" for=""
+              ><input
+                class="footer-form-input"
+                type="email"
+                placeholder="Enter your email"
+            /></label>
+            <button type="submit" class="footer-form-btn">Subscribe</button>
+          </form>
+        </div>
       </div>
     </footer>
+
+    <div class="backdrop">
+      <div class="modal-container">
+        <button class="modal-close-btn" type="button">
+          <svg class="modal-close-icon" width="28" height="28">
+            <use href="./images/icons.svg#icon-x-close"></use>
+          </svg>
+        </button>
+        <h2 class="modal-title">
+          LEAVE A REVIEW ABOUT <span class="modal-span">OUR CHOCOLATE</span>
+        </h2>
+        <form class="modal-form">
+          <div class="modal-input-wrapper">
+            <label class="modal-form-label" for="name">Name</label>
+            <input id="name" class="modal-form-input" type="text" /><svg
+              width="24"
+              height="24"
+              class="modal-input-icon"
+            >
+              <use href="./images/icons.svg#icon-user-1"></use>
+            </svg>
+          </div>
+          <div class="modal-input-wrapper">
+            <label class="modal-form-label" for="email">Email</label
+            ><input id="email" class="modal-form-input" type="email" /><svg
+              width="24"
+              height="24"
+              class="modal-input-icon"
+            >
+              <use href="./images/icons.svg#icon-mail"></use>
+            </svg>
+          </div>
+          <div class="modal-input-wrapper">
+            <label class="modal-form-label" for="phone">Phone number</label
+            ><input id="tel" class="modal-form-input" type="tel" /><svg
+              width="24"
+              height="24"
+              class="modal-input-icon"
+            >
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+          </div>
+          <div class="modal-textarea-wrapper">
+            <label class="modal-form-label" for="comment">Comment</label>
+            <textarea
+              class="modal-form-textarea"
+              name="comment"
+              id="comment"
+              placeholder="Enter text"
+            ></textarea>
+          </div>
+          <div class="modal-checkbox-container">
+            <label class="modal-checkbox-label">
+              <input
+                class="modal-checkbox-input visually-hidden"
+                type="checkbox"
+              /><span class="modal-checkbox-span"
+                ><svg width="10" height="10" class="modal-checkbox-vector">
+                  <use href="./images/icons.svg#icon-icon"></use></svg></span
+              ><span class="modal-text-span"
+                >I accept the terms and conditions of the&#160;</span
+              >
+              <a class="modal-checkbox-link" href="">Privacy Policy</a>
+            </label>
+          </div>
+          <button class="modal-form-btn" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
