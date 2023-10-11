@@ -641,31 +641,34 @@
         <form class="modal-form">
           <div class="modal-input-wrapper">
             <label class="modal-form-label" for="name">Name</label>
-            <input id="name" class="modal-form-input" type="text" /><svg
-              width="24"
-              height="24"
-              class="modal-input-icon"
-            >
+            <input
+              id="name"
+              name="user-name"
+              class="modal-form-input"
+              type="text"
+            /><svg width="24" height="24" class="modal-input-icon">
               <use href="./images/icons.svg#icon-user-1"></use>
             </svg>
           </div>
           <div class="modal-input-wrapper">
             <label class="modal-form-label" for="email">Email</label
-            ><input id="email" class="modal-form-input" type="email" /><svg
-              width="24"
-              height="24"
-              class="modal-input-icon"
-            >
+            ><input
+              id="email"
+              name="user-email"
+              class="modal-form-input"
+              type="email"
+            /><svg width="24" height="24" class="modal-input-icon">
               <use href="./images/icons.svg#icon-mail"></use>
             </svg>
           </div>
           <div class="modal-input-wrapper">
-            <label class="modal-form-label" for="phone">Phone number</label
-            ><input id="tel" class="modal-form-input" type="tel" /><svg
-              width="24"
-              height="24"
-              class="modal-input-icon"
-            >
+            <label class="modal-form-label" for="tel">Phone number</label
+            ><input
+              id="tel"
+              name="user-phone"
+              class="modal-form-input"
+              type="tel"
+            /><svg width="24" height="24" class="modal-input-icon">
               <use href="./images/icons.svg#icon-phone"></use>
             </svg>
           </div>
@@ -679,10 +682,13 @@
             ></textarea>
           </div>
           <div class="modal-checkbox-container">
-            <label class="modal-checkbox-label">
+            <label for="terms" class="modal-checkbox-label">
               <input
+                id="terms"
+                name="terms"
                 class="modal-checkbox-input visually-hidden"
                 type="checkbox"
+                required
               /><span class="modal-checkbox-span"
                 ><svg width="10" height="10" class="modal-checkbox-vector">
                   <use href="./images/icons.svg#icon-icon"></use></svg></span
